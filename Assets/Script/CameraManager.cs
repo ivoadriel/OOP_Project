@@ -10,14 +10,9 @@ public class CameraManager : MonoBehaviour
 
     [SerializeField] private float mSpeed = 20.0f; // Scale. Speed of the movement
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         // Check if on the right edge and move accordingly
         if (Input.mousePosition.x >= Screen.width - mDelta)
